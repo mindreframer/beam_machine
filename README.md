@@ -1,6 +1,7 @@
 # BeamMachine
 
-**TODO: Add description**
+Ready Elixiri-fied snippets from [theBeamBook](https://happi.github.io/theBeamBook/#_preface).
+
 
 ## Installation
 
@@ -18,4 +19,3 @@ end
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/beam_machine](https://hexdocs.pm/beam_machine).
-
