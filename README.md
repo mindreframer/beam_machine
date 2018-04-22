@@ -2,6 +2,8 @@
 
 Ready Elixiri-fied snippets from [theBeamBook](https://happi.github.io/theBeamBook/#_preface).
 
+https://github.com/blackode/elixir-tips
+
 
 ## Installation
 
