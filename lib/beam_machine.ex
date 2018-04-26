@@ -23,7 +23,7 @@ defmodule BeamMachine do
   end
 
   def backtrace(str_pid) when is_binary(str_pid) do
-    pid(str_pid) |> backtrace()
+    makepid(str_pid) |> backtrace()
   end
 
   def backtrace(pid) when is_pid(pid) do
@@ -45,7 +45,7 @@ defmodule BeamMachine do
       iex> pid("0.21.32")
       #PID<0.21.32>
   """
-  def pid(string) when is_binary(string) do
+  def makepid(string) when is_binary(string) do
     :erlang.list_to_pid('<#{string}>')
   end
 
@@ -58,7 +58,7 @@ defmodule BeamMachine do
       iex> pid(0, 64, 2048)
       #PID<0.64.2048>
   """
-  def pid(x, y, z) when is_integer(x) and x >= 0 and
+  def makepid(x, y, z) when is_integer(x) and x >= 0 and
                         is_integer(y) and y >= 0 and
                         is_integer(z) and z >= 0 do
     :erlang.list_to_pid(
